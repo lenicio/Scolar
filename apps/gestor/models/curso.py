@@ -13,4 +13,4 @@ class Curso(models.Model):
     data_criacao = models.DateField(default=timezone.now)  # Data de criação do curso
 
     def __str__(self):
-        return f'{self.nome} ({self.get_nivel_display()})'
+        return f'({self.id}) {self.nome} ({self.get_nivel_display()})'
